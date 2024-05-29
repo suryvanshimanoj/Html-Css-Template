@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-student-01</title>
+    <style>
+        .container {
+            background-color: blue;
+            width: 50%;
+            margin: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+           
+        }
+        th,td {
+            border: 1px solid lightgray;
+            color: white;
+            text-align: left;
+            padding: 10px;
+            margin: 2px;
+        }
+        th {
+            background-color: rgb(231, 228, 228);
+            font-weight: bold;
+            font-size: 18px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="gender"],
+        input[type="file"],
+        select {
+            width: 100%;
+            border: none;
+            padding: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+        }
+        :focus {
+            outline: none;
+        }
+        input[type="submit"] {
+            background-color: green;
+            border: none;
+            font-size: 18px;
+            padding: 10px;
+            margin: 8px 0;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <table>
+                <tr>
+                    <th colspan="2"><font color="black">STUDENT REGISTRATION FORM_</font></th>
+                </tr>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="" id="" placeholder="first name" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="" id="" placeholder="last name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email ID:</label></td>
+                    <td><input type="email" placeholder="email" maxlength="10"required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" placeholder="password"></td>
+                </tr>
+
+                <tr>
+                    <td>Mobile Number:</td>
+                    <td><input type="tel" placeholder="78624xxxxx" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td>Select Gender:</td>
+                    <td>
+                         Male <input type="radio">
+                         Female <input type="radio">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of  Birth:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea name="" id="" cols="40" rows="2"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Uploud File:</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Hoddies:</td>
+                    <td>
+                        <input type="checkbox"> Drawing
+                        <input type="checkbox"> Singing
+                        <input type="checkbox"> Dancing
+                        <input type="checkbox"> Sketching
+                        <input type="checkbox"> Others
+                    </td>
+                </tr>
+                <tr>
+                    <td>Courses:</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="" selected disabled>Select Course</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Physics">Physics</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

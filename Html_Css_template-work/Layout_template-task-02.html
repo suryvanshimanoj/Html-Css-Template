@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout_task-02</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* ============Header start==================== */
+        .header {
+            height: 50px;
+            background-color: black;
+            display: flex;
+        }
+
+        .logo {
+            height: inherit;
+            width: 20%;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 80px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            height: inherit;
+            width: 80%;
+            margin-top: 15px;
+            margin-left: 80px;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 16px 8px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            margin-right: 50px;
+            text-transform: uppercase;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            text-decoration: underline 2px;
+            text-underline-offset: 10px;
+
+
+        }
+
+        /* ============main start==================== */
+        .main {
+            height: inherit;
+            background-color: navy;
+            display: flex;
+        }
+
+        .part-1 {
+            height: 230px;
+            columns: 4;
+            column-gap: 70px;
+            margin-top: 100px;
+            margin-left: 230px;
+            display: flex;
+            column-width: 50px;
+        }
+
+        .p-1 h1 {
+            color: white;
+            font-size: 22px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .p-1 p {
+            color: aquamarine;
+            font-size: 13px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 20px;
+        }
+
+        .p-1 button {
+            border: 1px solid lightgray;
+            background-color: lightgray;
+            color: black;
+            border-radius: 30px;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+
+        .p-1 button:hover {
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+
+        /* ============main-2 start==================== */
+        .main-2 {
+            height: inherit;
+            background-color: rgb(245, 240, 240);
+            border-bottom: 2px solid rgb(187, 185, 185);
+            display: flex;
+        }
+
+        .part-2 {
+            height: 300px;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            padding-top: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .pt-1 {
+            column-count: 4;
+            column-gap: 30px;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .pt-1 img {
+            height: 180px;
+            width: 210px;
+            border-radius: 15px;
+        }
+
+        /* ============main-3 start==================== */
+        .main-3 {
+            background-color: white;
+            height: 300px;
+            display: flex;
+            
+        }
+
+        .news {
+            height: inherit;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 90px;
+        }
+
+        .pa-1 {
+            height: inherit;
+            width: 100%;
+            column-count: 4;
+            column-gap: 30px;
+            column-rule: ridge 1px rgb(231, 228, 228);
+            /* display: grid; */
+            margin: auto;
+            margin-top: 50px;
+            margin-left: 120px;
+        }
+
+        .dt-1 h5 {
+            font-size: 10px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-bottom: 10px;
+        }
+
+        .dt-1 a {
+            font-size: 11px;
+            color: rgb(11, 187, 187);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .dt-1 p {
+            font-size: 12px;
+            color: rgb(194, 185, 185);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding-top: 10px;
+        }
+        .dt-2 h5{
+            font-size: 10px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-bottom: 10px;
+        }
+        .dt-2 a {
+            font-size: 11px;
+            font-weight: bold;
+            color: rgb(73, 160, 247);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .dt-2 p {
+            font-size: 12px;
+            color: rgb(194, 185, 185);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration-line: underline;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------Header Start----------------------------->
+    <div class="header">
+        <div class="logo">
+            iBuild
+        </div>
+        <div class="topnav">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Products</a>
+            <a href="#">Services </a>
+            <a href="#">Contects</a>
+        </div>
+    </div>
+    <!---------------Main Start----------------------------->
+    <div class="main">
+        <div class="part-1">
+            <div class="p-1">
+                <h1>&nbsp; &nbsp;&nbsp; PROJECT <br> MANAGEMENT</h1>
+                <p>Our team is skilled at <br>successfully
+                    completing <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; project.</p>
+
+                <button>More</button>
+            </div>
+            <div class="p-1">
+                <h1>INNOVATION AND<br> &nbsp; &nbsp; &nbsp; DIVERSITY</h1>
+                <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Infrastructure are<br> approached with creativity
+                    and<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;innovation
+                </p>
+
+                <button>More</button>
+            </div>
+            <div class="p-1">
+                <h1>A PROFESSIONAL<br> &nbsp; &nbsp; &nbsp;APPROACH</h1>
+                <p>We have also won significant<br>contects purely on a quality<br> &nbsp; &nbsp; &nbsp; &nbsp;
+                    selection basis.</p>
+
+                <button>More</button>
+            </div>
+            <div class="p-1">
+                <h1>A SUSTAINABLE<br> &nbsp; &nbsp; &nbsp; &nbsp;FUTURE</h1>
+                <p>We're proud of the developments<br> &nbsp; &nbsp; &nbsp;we've worked on, visit our<br> &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; online gallery.</p>
+
+                <button>More</button>
+            </div>
+        </div>
+    </div>
+    <!---------------Main-2 Start----------------------------->
+    <div class="main-2">
+        <div class="part-2">
+            RECENT PROJECTS
+            <div class="pt-1">
+                <img src="../html-top/home-1/Images/page1-img5.jpg" alt="">
+                <img src="../html-top/home-1/Images/page1-img6.jpg" alt="">
+                <img src="../html-top/home-1/Images/page1-img7.jpg" alt="">
+                <img src="../html-top/home-1/Images/page1-img8.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!---------------Main-3 Start----------------------------->
+    <div class="main-3">
+        <div class="part-3">
+            <div class="news">
+                LATEST NEWS
+            </div>
+            <div class="pa-1">
+                <div class="dt-1">
+                    <h5>18 April,2013</h5>
+                    <a href="#">Lorem ipsum dolor sit amet,con<br>sectetuer adipiscing.</a>
+                    <p>Lorem ispum dolor sit amet, consectetuer<br>adipiscing elit,sed diam
+                        nonummy nidh<br>euismod tincidunt ut laoreet dolore magna<br>aliquam
+                        erat volutpat.</p>
+                </div>
+                <div class="dt-2">
+                    <h5>16 April,2013</h5>
+                    <a href="#">Lorem ispum dolor sit amet,<br> consectetueradipiscing elit,sed<br> diam
+                        nonummy ni.</a>
+                    <p>Lorem ispum dolor sit amet, consectetuer<br>adipiscing elit,sed diam
+                        nonummy nidh<br>euismod tincidunt ut laor.</p>
+                </div>
+                <div class="dt-1">
+                    <h5>13 April,2013</h5>
+                    <a href="#">Lorem ipsum dolor sit amet,con<br>sectetuer adipiscing.</a>
+                    <p>Lorem ispum dolor sit amet, consectetuer<br>adipiscing elit,sed diam
+                        nonummy nidh<br>euismod tincidunt ut laoreet dolore magna<br>aliquam
+                        erat volutpat.</p>
+                </div>
+                <div class="dt-1">
+                    <h5>10 April,2013</h5>
+                    <a href="#">Lorem ispum dolor sit amet,<br> consectetueradipiscing elit,sed<br> diam
+                        nonummy ni.</a>
+                    <p>Lorem ispum dolor sit amet, consectetuer<br>adipiscing elit,sed diam
+                        nonummy nidh<br>euismod tincidunt ut.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout_tamplate-task-04</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 70px;
+            background-color: #944E63;
+            color: red;
+            display: flex;
+        }
+
+        .logo {
+            width: 20%;
+            height: auto;
+            padding-top: 15px;
+            padding-left: 80px;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .text {
+            width: 80%;
+            height: inherit;
+            font-size: 50px;
+            color: lightslategray;
+            text-align: center;
+            letter-spacing: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+        }
+
+        .carousel {
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin: auto;
+            display: block;
+
+        }
+
+        .main {
+            width: 100%;
+            height: inherit;
+            display: flex;
+            border-top: 50px solid rgb(66, 62, 62);
+
+        }
+
+        .sidebar {
+            width: 20%;
+            height: inherit;
+            padding: 15px;
+            text-align: center;
+            background-color: rgb(224, 224, 224);
+            text-align: center;
+        }
+
+        .sidebar img {
+            width: 100%;
+            height: 100px;
+
+        }
+
+        .mainbar {
+            width: 80%;
+            background-color: rgb(155, 194, 196);
+            height: inherit;
+            padding: 20px;
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+
+        .footer {
+
+            width: 100%;
+            height: inherit;
+            background-color:lightcoral;
+            display: flex;
+        }
+        .f-box {
+            width: 25%;
+            height: inherit;
+            padding: 20px;
+            color: white;
+        }
+        .f-box1 {
+            width: 25%;
+            height: inherit;
+            padding: 20px;
+            color:blue;
+        }
+        li::marker {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===================header start====================== -->
+    <div class="header">
+        <div class="logo">
+            <img src="../html-top/home-1/Images/favicon.png" alt="">
+        </div>
+        <div class="text">
+            Bootstrap CSS framework.
+        </div>
+    </div>
+    <!-- ==============carousel start========================== -->
+    <div class="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../html-top/home-1/Images/post-slide-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../html-top/home-1/Images/post-slide-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../html-top/home-1/Images/post-slide-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../html-top/home-1/Images/post-slide-4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../html-top/home-1/Images/post-slide-5.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- ==============carousel end========================== -->
+
+    <div class="main">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <img src="../html-top/home-1/Images/post-slide-6.jpg" alt="">
+            <h2>Sidebar</h2>
+            <img src="../html-top/home-1/Images/post-slide-5.jpg" alt="">
+            <h2>Sidebar</h2>
+            <img src="../html-top/home-1/Images/post-slide-4.jpg" alt="">
+            <h2>Sidebar</h2>
+            <img src="../html-top/home-1/Images/post-slide-2.jpg" alt="">
+            <h2>Sidebar</h2>
+            <img src="../html-top/home-1/Images/post-landscape-1.jpg" alt="">
+
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora autem voluptatibus dolorem perspiciatis
+                asperiores nostrum, odit consequuntur repellendus, veritatis repellat natus repudiandae est atque nemo
+                impedit vitae quia sunt eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+                magni alias, illum ea earum eveniet aperiam obcaecati.</p>
+        </div>
+
+        <div class="mainbar">
+            <h2>Css-Template-1</h2>
+            <img src="../html-top/home-1/Images/post-slide-1.jpg" width="100%" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, omnis. Autem modi earum architecto
+                odit similique odio eos accusamus corporis fugiat fuga quo, quidem, omnis nam expedita! A, dolorem
+                repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos laudantium tenetur, ducimus
+                suscipit ex sit, eos dolores, fugit rem architecto in eum cum ipsa delectus esse quibusdam. Perferendis,
+                consequatur sapiente? </p>
+
+            <h2>Css-Template-2</h2>
+            <img src="../html-top/home-1/Images/post-landscape-2.jpg" width="100%" height="400px" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, omnis. Autem modi earum architecto
+                odit similique odio eos accusamus corporis fugiat fuga quo, quidem, omnis nam expedita! </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="f-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui, animi vero quisquam assumenda cumque non sed modi. Earum facilis autem ab inventore, dolorum expedita nihil laborum obcaecati labore aut?</p>
+        </div>
+        <div class="f-box">
+            <img src="../html-top/home-1/Images/person-1.jpg" width="100%" height="200px" alt="">
+        </div>
+
+        <div class="f-box1">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>SERVICE</li>
+                <li>CONTACT US</li>
+            </ul>
+        </div>
+        <div class="f-box">
+            <img src="../html-top/home-1/Images/person-6.jpg" width="100%" height="200px" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

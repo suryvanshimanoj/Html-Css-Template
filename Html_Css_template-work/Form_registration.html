@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(../html-top/home-1/Images/top.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container {
+            position: relative;
+            margin-left: 30px;
+            margin-right: 20px;
+        }
+        .inner {
+            background-color: white;
+            max-height: 480px;
+            max-width: 750px;
+            display: flex;
+            margin: auto;
+            margin-top: 100px;
+            padding: 20px;
+        }
+        img {
+            width: 330px;
+        }
+        .img-holder {
+            width: 50%;
+        }
+        h3{
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        input,select,button {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .form-group {
+            display: flex;
+        }
+        .form-group input {
+            width: 50%;
+        }
+        .form-group input:first-child {
+            margin-left: 30px;
+            margin-right: 20px;
+        }
+        .form-control {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 100%;
+            height: 35px;
+            display: block;
+            margin-bottom: 10px;
+            margin-right: 20px;
+        }
+        :focus {
+            outline: none;
+        }
+        select {
+            cursor: pointer;
+            color: gray;
+        }
+        select option[value=""][disabled] {
+            border: none;
+        }
+        button {
+            border: none;
+            width: 164px;
+            height: 51px;
+            display: flex;
+            margin: auto;
+            cursor: pointer;
+           align-items: center;
+           justify-content: center;
+            color: white;
+            background-color: black;
+            margin-top: 50px;
+        }
+        button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <div class="img-holder">
+                <img src="../html-top/home-1/Images/images-1.jpeg" alt="">
+            </div>
+            <form action="">
+                <h3>REGISTRATION FORM</h3>
+                <div class="form-group">
+                    <input type="text" placeholder="First Name" max="10" required  class="form-control">
+                    <input type="text" placeholder="Last Name" max="5" required  class="form-control"> 
+                </div>
+                <div class="container">
+                    <input type="text" placeholder="Username" class="form-control" required>
+                </div>
+                <div class="container">
+                    <input type="email" placeholder="Email Address" required class="form-control"> 
+                </div>
+                <div class="container">
+                    <select name="" id="" class="form-control" required>
+                        <option value="" selected disabled>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="container">
+                    <input type="password" placeholder="password" required class="form-control">
+                </div>
+                <div class="container">
+                    <input type="text" placeholder="Confirm Username" required  class="form-control">
+                </div>
+                <button>Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
